@@ -441,7 +441,7 @@ endif ()
 if (MSVC)
   if (CMAKE_SYSTEM_VERSION MATCHES "10\\.0.*")
     # https://docs.microsoft.com/en-us/cpp/porting/modifying-winver-and-win32-winnt
-    list(APPEND CRYPTOPP_COMPILE_DEFINITIONS "_WIN32_WINNT=0x0A00")
+    # list(APPEND CRYPTOPP_COMPILE_DEFINITIONS "_WIN32_WINNT=0x0A00")
   endif ()
   # winapifamily.h is missing on AppVeyor machines
   INCLUDE (CheckIncludeFiles)
